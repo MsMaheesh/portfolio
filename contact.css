@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Helvetica;
+}
+body{
+    background-color:#F9E8D9;
+    
+}
+/* back:#F9E8D9
+head:#EE7214
+text:#F7B787
+style,sub:#527853 */
+
+.close a{ 
+    margin-left: 98%;
+    color: #EE7214;
+}
+h1{
+    text-align: center;
+    color: #EE7214;
+    font-size: 30px;
+    padding-top: 5%;
+    /* margin-bottom: 2%; */
+    text-transform: capitalize;
+    position: relative;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    top: 110%;
+    left:50%;
+    background-color:#527853;
+    transform: translateX(-50%);
+    border-radius: 32px;
+
+}
+@media screen and (min-width:500px) {
+.contact_container{
+    width: 100vw;
+    min-height: 70vh;
+    /* background-color:#C6EBC5; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px; */
+    /* border: 2px solid red; */
+} 
+.contact_container .contact_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    color: #527853;
+    background-color:#F7B787;
+    border-radius: 20px;
+    box-shadow: 5px 3px 3px #efb588;
+    /* border: 2px solid blue; */
+}
+.contact_container .contact_box form{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* border: 2px solid rgb(0, 255, 179); */
+}
+.contact_box form input{
+   width: 80%;
+   height: 10%;
+   outline: none;
+   border: none;
+   background-color: #F7B787;
+   border-bottom: 1px solid #EE7214;
+   /* border-radius: 20px; */
+}
+.contact_box form textarea{
+    width: 80%;
+    height: 30%;
+    outline: none;
+    border: none;
+    background-color: #F7B787;
+    border-bottom: 1px solid #EE7214;
+    /* border-radius: 20px; */
+ }
+ .contact_box form button{
+    width: 30%;
+    height: 10%;
+    outline: none;
+    border: #527853;
+    border-radius: 20px;
+    border: 1px solid #527853;
+    background-color: #F7B787;
+    cursor: pointer;
+    font-size: 20px;
+    color: #EE7214;
+}
+.btn:hover{
+    background-color: #527853;
+    color: #EE7214;
+}
+
+}
+@media screen and (max-width:480px) {
+
+    .contact_container{
+        width: 100vw;
+        min-height: 70vh;
+        /* background-color:#C6EBC5; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 20px; */
+
+        
+    }
+    .contact_container .contact_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 400px;
+        color: #527853;
+        background-color:#F7B787;
+        border-radius: 20px;
+        /* border: 2px solid blue; */
+    }
+    .contact_container .contact_box form{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        /* border: 2px solid rgb(0, 255, 179); */
+    }
+    .contact_box form input{
+       width: 80%;
+       height: 10%;
+       outline: none;
+       border: none;
+       background-color: #F7B787;
+       border-bottom: 1px solid #EE7214;
+       /* border-radius: 20px; */
+    }
+    .contact_box form textarea{
+        width: 80%;
+        height: 30%;
+        outline: none;
+        border: none;
+        background-color: #F7B787;
+        border-bottom: 1px solid #EE7214;
+        /* border-radius: 20px; */
+     }
+     .contact_box form button{
+        width: 30%;
+        height: 10%;
+        border: none;
+        outline: none;
+        outline: none;
+        border-radius: 20px;
+        color: #EE7214;
+        background-color: #527853;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .close a{ 
+        margin-left: 93%;
+        color: #EE7214;
+    }
+    #home{
+        animation: contact 0.4s linear ;
+        
+    }
+    @keyframes contact {
+        /* from{transform: translatey(-10%);}
+        to{transform: translatey(0%);} */
+        from{transform: rotatez(90deg);}
+        to{transform:rotatez(0deg);} 
+    }
+}
+  

@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Helvetica;
+}
+body{
+    background-color:#F9E8D9;
+}
+/* back:#F9E8D9
+head:#EE7214
+text:#F7B787
+style,sub:#527853 */
+.container{
+    display: none;
+}
+.headder i{
+    display: none;
+}
+.headder{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headder h1 {
+    margin-left:3%;
+    padding: 1%; 
+    color: #EE7214;
+    font-size: 35px;
+    font-weight: 700px;  
+}
+.headder .main_nav{
+    margin-right:3%;
+    padding: 1%;
+    display: flex;
+    list-style: none;
+    gap: 13px;
+}
+
+.main_nav li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #527853;
+    transition:all 0.3s;
+}
+
+.main_nav li a:hover{
+    color: #F7B787;
+    width: 60px;
+    height: 25px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: #527853;
+}
+.main-section{
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.main-section  .left-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    
+}  
+
+.left-section img{
+    width: 300px;
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 50%;   
+    
+}
+ .main-section .right-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    gap: 10px;
+    font-size: 26px;
+    color: 393E46;
+    margin-right: 3%;
+}
+.right-section h1{ 
+    font-size: 34px;
+    color: #EE7214;
+}
+.right-section h2{
+    color: #527853;
+    font-size: 23px;
+}
+.right-section p{
+    color: black;
+    font-size: 20px;
+}
+
+
+.right-section-menu {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    margin-top: 3%;
+}
+.right-section-menu li{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #527853;
+    position: relative;
+    cursor: pointer;
+}
+.right-section-menu li:hover{
+    transform: translatey(-5%);
+}
+.right-section-menu li a{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-decoration: none;
+    transform: translate(-50%,-50%);
+    color:#F7B787;
+}
+
+.fotter{
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.fotter div{
+    margin: 2% 3% 2% 3%;
+    text-align: center;
+}
+.fotter a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #527853;
+    color: #F7B787;
+    transition: all 0.3s;
+}
+.fotter a:hover{
+    transform: translateY(10%);
+    color: #527853;
+    background-color: #F7B787;
+}
+
+@media (min-width:700px)and (max-width:1024px) { 
+    .headder h1 {
+        font-size: 28px;
+    }
+    .main_nav li a{
+        font-size: 18px;
+    } 
+    .main_nav li a:hover{
+        width: 35px;
+        height: 20px;
+        padding: 7px;
+        font-size: 13px;
+    }
+    .left-section img{
+        width: 220px;
+        height: 220px;  
+    }
+    .right-section h1{
+        font-size: 24px;
+    }
+    .right-section h2{
+        font-size: 20px;
+    }
+    .right-section p{
+        font-size: 16px;
+    }
+    .right-section-menu li{
+        width: 85px;
+        height: 85px;
+        font-size: 20px;
+    }    
+
+}
+
+    
+@media screen and (max-width:699px) {
+    
+    .headder i{
+        display: block;
+        margin-right:3%;
+        padding: 1%;
+    }
+    .headder .main_nav{
+        display: none;
+    }
+    .headder h1{
+        font-size: 20px;
+    }
+    
+    .container{
+        display: block;
+        animation: nav 0.5s linear;
+    }
+    .side_nav {
+        width: 100%;
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .side_nav li {
+        list-style: none;
+        margin-top: 20px;
+    }
+    .side_nav li a{
+        text-decoration: none;
+        font-size: 26px;
+        color:#EE7214;
+    }
+    .side_logo{
+        margin-left:93%;
+        color: #EE7214;
+    }
+    @keyframes nav {
+        from{ transform: translatey(-100%);}
+        to{ transform: translatey(0%);}
+        
+    }
+    .display{
+        display: none;
+    }
+    #home{
+        animation: home 0.3s linear;
+    }
+    @keyframes home {
+        from{ transform: translatey(10%);}
+        to{ transform: translatey(0%);}
+        
+    }
+    .main-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+    }
+    
+    .left-section img{
+        width: 120px;
+        height: 120px;  
+    }
+    .main-section .right-section{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    .right-section h1{
+        font-size: 19px;
+        margin-left: 3% ;
+    }
+    .right-section h2{
+        font-size: 16px;
+        margin-left: 3% ;
+    }
+    .right-section p{
+        font-size: 14px;
+        margin-left: 3% ;
+    } 
+
+    .right-section-menu li{
+        position: relative;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+    }
+    .right-section-menu li a{
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        text-decoration: none;
+        transform: translate(-50%,-50%);
+        color: #E5DDC5;
+    }
+    .btn1{
+        animation-name: btn1;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+    }
+    .btn2{
+        animation-name: btn2;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+    }
+    .btn3{
+        animation-name: btn3;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+    }
+    @keyframes btn1 {
+        from{transform: translatey(30px);}
+        to{transform: translatey(0px);}
+    }
+    @keyframes btn2 {
+        from{transform: translatey(-30px);}
+        to{transform: translatey(0px);}
+    }
+    @keyframes btn3 {
+        from{transform: translatey(30px);}
+        to{transform: translatey(0px);}
+    }
+    
+    .fotter{
+        position: absolute;
+        bottom: 0;
+        border-top: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .fotter div {
+        text-align: start;
+        margin-top: 1%;
+        font-size: 14px;
+    } 
+    .fotter h2{
+        font-size: 14px;
+    } 
+    .fotter a{
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+
+}
+
+

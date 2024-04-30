@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+ 
+<div class="main">
+
+    <div  class="container  display" id="nav">
+        <div  id="logo2">
+            <i onclick="myFunction1()" class="fa-solid fa-xmark fa-2x side_logo"></i>
+        </div>
+
+        <ul  class="side_nav">
+            <li ><a href="skill.html">Skills</a></li>
+            <li ><a href="project.html">Projects</a></li>
+            <li ><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="home" >
+    <div class="headder">
+        <h1>Ms Maheesh</h1>
+        <ul  class="main_nav">
+            <li ><a href="skill.html">Skills</a></li>
+            <li ><a href="project.html">Projects</a></li>
+            <li ><a href="contact.html">Contact</a></li>
+        </ul>
+        <i id="logo1" onclick="myFunction()" class="fa-solid fa-caret-down fa-2x "></i>
+    </div>
+    
+    <div class="main-section">
+        <div class="left-section">
+            <img src="ass/IMG_20201003_171122.jpg">
+        </div>
+        <div class="right-section">
+            <h1>Hello,</h1>
+            <h2>A Bit About Me</h2>
+            <p>My name is MS MAHEESH, and I graduated with a Bachelor's degree in Mechanical Engineering (B.Tech) in 2022.I have a solid foundation in HTML,CSS,JavaScript,React.js,Redux,Node.js,Express, and MongoDB, and have completed projects showcasing my skills in developing user-friendly and responsive web interfaces, I'm excited to begin my career as a Frontend Engineer.</p>
+            <ul class="right-section-menu" >
+                <li class="btn1"><a href="skill.html">Skills</a></li>
+                <li class="btn2"><a href="project.html">Projects</a></li>
+                <li class="btn3"><a href="contact.html">Contact</a></li>
+            </ul>
+       </div>
+    </div>
+
+    <div class="fotter">
+        <div>
+            <h2>Phone</h2>
+            <p>+91 9391601889</p>
+        </div>
+        <div>
+            <h2>Email</h2>
+            <p>msmaheesh820@gmail.com</p>
+        </div> 
+        <div>
+            <h2>Follow me</h2>
+            <a href="https://www.linkedin.com/in/maheesh-ms-5108472a7/"><i class="fa-brands fa-linkedin-in social-link"></i></a>
+            <a href="https://github.com/MsMaheesh"><i class="fa-brands fa-github social-link"></i></a>
+        </div> 
+    </div>
+
+</div>
+
+<div class="lap">
+
+</div>
+    <script>
+        function myFunction() {
+          const list = document.getElementById("nav").classList;
+          list.remove("display");
+          
+          const body = document.getElementById("home").classList;
+          body.add("display")
+        }
+        function myFunction1() {
+          const list = document.getElementById("nav").classList;
+          list.add("display");
+          
+          const body = document.getElementById("home").classList;
+          body.remove("display")
+        }
+    </script>
+</body>
+</html>
